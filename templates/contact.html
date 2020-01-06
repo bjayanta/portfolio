@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+    <h2>Contact page</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="name">Fullname</label>
+            <input type="text" name="fullname">
+        </div>
+
+        <div>
+            <label for="email">Email address</label>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message"></textarea>
+        </div>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Send">
+    </form>
+
+    <ul>
+        <li>{{ name | default:'N/A' }}</li>
+        <li>{{ email | default:'N/A' }}</li>
+        <li>{{ message | default:'N/A' }}</li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    body {
+        background: yellow;
+    }
+    
+</style>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    console.log("Contact page.");
+</script>
+{% endblock %}
