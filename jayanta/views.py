@@ -12,6 +12,24 @@ class Home(View):
 
 class Contact(View):
     def get(self, request):
+        # delete data
+        if(request.GET.get('method') == 'delete' and request.GET.get('id')):
+            row = ContactModel.objects.filter(id=request.GET.get('id'))
+            row.delete()
+
+        # edit
+        if(request.GET.get('method') == 'edit' and request.GET.get('id')):
+            row = ContactModel.objects.filter(id=request.GET.get('id')).get()
+            return render(request, 'edit.html', {'title': 'Edit', 'record': row})
+
+            # row.update(
+            #     name = request.POST['name'],
+            #     email = request.POST['email'],
+            #     address = request.POST['address'],
+            #     city = request.POST['city'],
+            #     zipcode = request.POST['zipcode']
+            # )
+
         # get data from db
         # record = ContactModel.objects.all()
         record = ContactModel.objects.order_by('-id')
@@ -20,31 +38,28 @@ class Contact(View):
         return render(request, 'contact.html', {'title': 'Contact', 'record': record})
 
     def post(self, request):
-        if(request.method == 'POST'):
-            if(request.GET.get('method') == 'edit'):
-                row = ContactModel.objects.filter(id=request.GET.get('id'))
-                row.update(
-                    name = request.POST['name'],
-                    email = request.POST['email'],
-                    address = request.POST['address'],
-                    city = request.POST['city'],
-                    zipcode = request.POST['zipcode']
-                )
-            elif(request.GET.get('method') == 'delete'):
-                row = ContactModel.objects.filter(id=request.GET.get('id'))
-                row.delete()
-            else:
-                # set data from form
-                data = ContactModel(
-                    name = request.POST['name'],
-                    email = request.POST['email'],
-                    address = request.POST['address'],
-                    city = request.POST['city'],
-                    zipcode = request.POST['zipcode']
-                )
+        # edit
+        if(request.GET.get('method') == 'edit' and request.GET.get('id')):
+            row = ContactModel.objects.filter(id=request.GET.get('id'))
+            row.update(
+                name = request.POST['name'],
+                email = request.POST['email'],
+                address = request.POST['address'],
+                city = request.POST['city'],
+                zipcode = request.POST['zipcode']
+            )
+        else:
+            # set data from form
+            data = ContactModel(
+                name = request.POST['name'],
+                email = request.POST['email'],
+                address = request.POST['address'],
+                city = request.POST['city'],
+                zipcode = request.POST['zipcode']
+            )
 
-                # insert data
-                data.save()
+            # insert data
+            data.save()
 
         # return to view
         return redirect('/contact')
