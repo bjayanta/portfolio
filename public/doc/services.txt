@@ -1,0 +1,15 @@
+Software development:
+-------------------------------------------------
+Design, and develop data-driven digital products made to answer business challenges that meets custom requirements, automates tasks, solve time complexities and optimize operations. Offer readymade (CRM, ERP, PoS etc) & Custom applications both. Build cutting-edge web app with end-to-end web services.
+
+Apps Development:
+-------------------------------------------------
+Provide end-to-end native & hybrid mobile app (Android & iOS) development services with morden tech and user experience. I assist entrepreneurs, start-ups & enterprises in transforming their ideas into profitable business models. Modern and mobile-ready application that will help you reach all of your marketing.
+
+Cloud:
+-------------------------------------------------
+Customer centricity and  high quality cloud solutions after a detailed audit of your business ecosystem, infrastructure, and applications. Have strong industry domain knowledge support with AWS application deployment, Infrastructure Solutions, Enterprise Applications and other cloud services throughout their cloud journey.
+
+CMS:
+-------------------------------------------------
+4+ years of experience in WordPress development specializing in custom themes and plugins. Have a strong background in everything from building custom themes from scratch to modifying and reworking existing themes, designing and developing tools and plugins, building and launching web applications, and troubleshooting bugs.
