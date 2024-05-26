@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { Button } from './ui/button';
-import { Download, Menu } from 'lucide-react';
+import { LuDownload, LuMenu } from "react-icons/lu";
 import { cn } from '@/lib/utils';
 
 const Navigation = () => {
@@ -39,7 +39,7 @@ const Navigation = () => {
                     <Button asChild>
                         <Link href="/doc/resume.pdf" target='_blank' download>
                             <span>Resume</span>
-                            <Download className='ml-2 w-4 h-4' />
+                            <LuDownload className='ml-2 w-4 h-4' />
                         </Link>
                     </Button>
                 </div>
@@ -47,7 +47,7 @@ const Navigation = () => {
                 {/* Responsive */}
                 <div className='md:hidden'>
                     <Button variant={'link'} onClick={() => setIsOpen(!isOpen)}>
-                        <Menu />
+                        <LuMenu />
                     </Button>
                 </div>
             </div>
