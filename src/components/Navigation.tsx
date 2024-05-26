@@ -14,7 +14,7 @@ const Navigation = () => {
         <nav className='py-4 border'>
             <div className='container flex justify-between items-center'>
                 {/* Brand */}
-                <div className='flex items-center space-x-2 cursor-pointer'>
+                <Link href='/' className='flex items-center space-x-2'>
                     <Image
                         src="/images/logo-dark.svg"
                         alt="Next.js Logo"
@@ -24,14 +24,14 @@ const Navigation = () => {
                     />
 
                     <span className='text-xl font-bold'>Jayanta</span>
-                </div>
+                </Link>
 
                 {/* Menu */}
                 <ul className='hidden md:flex md:space-x-6 md:font-semibold'>
-                    <li><Link href='/about-me'>About Me</Link></li>
-                    <li><Link href='/skills'>Skills</Link></li>
-                    <li><Link href='/projects'>Projects</Link></li>
-                    <li><Link href='/contact-me'>Contact Me</Link></li>
+                    <li><Link href='/about-me' className='hover:text-blue-600'>About Me</Link></li>
+                    <li><Link href='/skills' className='hover:text-blue-600'>Skills</Link></li>
+                    <li><Link href='/projects' className='hover:text-blue-600'>Projects</Link></li>
+                    <li><Link href='/contact-me' className='hover:text-blue-600'>Contact Me</Link></li>
                 </ul>
 
                 {/* Download */}
