@@ -1,9 +1,32 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { FaAws, FaFacebook, FaGitAlt, FaGithub, FaJs, FaLaravel, FaLinkedin, FaLinux, FaNode, FaPhp, FaPython, FaReact, FaTwitter } from "react-icons/fa6";
 import { SiDart, SiExpress, SiFlutter, SiMongodb, SiMysql, SiNestjs } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { Metadata } from "next";
+import { 
+	FaAws, 
+	FaFacebook, 
+	FaGitAlt, 
+	FaGithub, 
+	FaJs, 
+	FaLaravel, 
+	FaLink, 
+	FaLinkedin, 
+	FaLinux, 
+	FaNode, 
+	FaPhp, 
+	FaPython, 
+	FaReact, 
+	FaTwitter 
+} from "react-icons/fa6";
+
+export const metadata: Metadata = {
+	title: 'Jayanta Biswas | Full-stack developer',
+	keywords: 'Full Stack developer, Web developer, Web designer, Software developer, Mobile app developer, Android app developer, Back-end developer, Fornt-end developer, PHP developer, Laravel developer, WordPress developer, WordPress Theme developer, WordPress Plugins developer, JavaScript developer, React developer, Vue developer, Dart developer, Flutter app developer',
+	description: 'Experienced Software Developer familiar with a wide range of programming utilities and languages. Knowledgeable of Full Stack (Backend and Frontend) and Mobile app development requirements. I am working as a developer since 2013 and completed 190+ projects and skilled in Python, Django, JavaScript, React JS, Dart, Flutter, PHP, Laravel, SQL, PostgreSQL, and Firebase. Also, I have good knowledge on GitHub, GitLab, Bitbucket like latest web tools that can make the work much easier. A strong communicator with the ability to convey ideas clearly with an emphasis on client satisfaction. Along with my journey learning about Full Stack Development I have learned an increasing amount about accurate time estimation, accountability, project management, and the importance of proper communication with stakeholders. Feel free to discuss any project related to my work experience and skills.',
+	metadataBase: new URL('https://jayanta.me'),
+};
 
 export default function Home() {
 	return (
@@ -11,7 +34,7 @@ export default function Home() {
 			<Navigation />
 
 			{/* Hero area */}
-			<header>
+			<header className="hidden">
 				<div className="container grid grid-cols-2 items-center py-20">
 					<div>
 						<article className="space-y-6 mb-10">
@@ -59,7 +82,7 @@ export default function Home() {
 			</header>
 
 			{/* My Skills */}
-			<section>
+			<section className="hidden">
 				<div className="container text-center py-16">
 					<h2 className="text-5xl">
 						<span>My</span> {' '}
@@ -67,7 +90,7 @@ export default function Home() {
 					</h2>
 				</div>
 
-				<div className="container grid grid-cols-5 gap-6 mb-24">
+				<div className="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-24">
 					<figure className="flex flex-col justify-center items-center space-y-6 border-2 border-black py-10 rounded hover:bg-black hover:text-white">
 						<FaJs size={64} />
 						<figcaption className="text-xl font-bold">JavaScript</figcaption>
@@ -151,7 +174,7 @@ export default function Home() {
 			</section>
 
 			{/* My Experience */}
-			<section className="bg-black text-white">
+			<section className="bg-black text-white hidden">
 				<div className="container text-center py-16">
 					<h2 className="text-5xl">
 						<span>My</span> {' '}
@@ -159,10 +182,10 @@ export default function Home() {
 					</h2>
 				</div>
 
-				<div className="container space-y-6 mb-24">
+				<div className="container space-y-6 pb-24">
 					{/* AmharcTech */}
 					<article className="border border-zinc-600 rounded-lg p-12 hover:bg-zinc-800">
-						<div className="flex items-center justify-between">
+						<div className="flex flex-col md:flex-row items-start justify-between">
 							<figure className="flex items-center space-x-6 mb-4">
 								<Link href="https://amharctech.com/" target="_blank">
 									<Image src="/images/amharctech.png" width={32} height={32} alt="AmharcTech" />
@@ -173,7 +196,7 @@ export default function Home() {
 								</figcaption>
 							</figure>
 							
-							<p className="text-zinc-300">February 2023 - Present</p>
+							<p className="text-zinc-300 mb-6 md:mb-0">February 2023 - Present</p>
 						</div>
 
 						<p className="text-zinc-300">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google&lsquo;s core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
@@ -181,7 +204,7 @@ export default function Home() {
 
 					{/* MaxSOP */}
 					<article className="border border-zinc-600 rounded-lg p-12 hover:bg-zinc-800">
-						<div className="flex items-center justify-between">
+						<div className="flex flex-col md:flex-row items-start justify-between">
 							<figure className="flex items-center space-x-6 mb-4">
 								<Link href="https://maxsop.com/" target="_blank">
 									<Image src="/images/maxsop.jpg" width={32} height={32} alt="MaxSOP" />
@@ -192,7 +215,7 @@ export default function Home() {
 								</figcaption>
 							</figure>
 							
-							<p className="text-zinc-300">September 2019 - January 2023</p>
+							<p className="text-zinc-300 mb-6 md:mb-0">September 2019 - January 2023</p>
 						</div>
 
 						<p className="text-zinc-300">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google&lsquo;s core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
@@ -200,7 +223,7 @@ export default function Home() {
 
 					{/* USITSolution */}
 					<article className="border border-zinc-600 rounded-lg p-12 hover:bg-zinc-800">
-						<div className="flex items-center justify-between">
+						<div className="flex flex-col md:flex-row items-start justify-between">
 							<figure className="flex items-center space-x-6 mb-4">
 								<Link href="https://usitsolution.net/" target="_blank">
 									<Image src="/images/usitsolution.png" width={32} height={32} alt="USITSolution" />
@@ -211,7 +234,7 @@ export default function Home() {
 								</figcaption>
 							</figure>
 							
-							<p className="text-zinc-300">February 2018 - September 2019</p>
+							<p className="text-zinc-300 mb-6 md:mb-0">February 2018 - September 2019</p>
 						</div>
 
 						<p className="text-zinc-300">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google&lsquo;s core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
@@ -219,7 +242,7 @@ export default function Home() {
 
 					{/* Freelance IT Lab */}
 					<article className="border border-zinc-600 rounded-lg p-12 hover:bg-zinc-800">
-						<div className="flex items-center justify-between">
+						<div className="flex flex-col md:flex-row items-start justify-between">
 							<figure className="flex items-center space-x-6 mb-4">
 								<Link href="https://www.freelanceit.com.bd/" target="_blank">
 									<Image src="/images/freelanceitlab.png" width={32} height={32} alt="Freelance IT Lab" />
@@ -230,7 +253,7 @@ export default function Home() {
 								</figcaption>
 							</figure>
 							
-							<p className="text-zinc-300">February 2015 - January 2018</p>
+							<p className="text-zinc-300 mb-6 md:mb-0">February 2015 - January 2018</p>
 						</div>
 
 						<p className="text-zinc-300">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google&lsquo;s core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
@@ -238,7 +261,7 @@ export default function Home() {
 
 					{/* Freelance IT Lab */}
 					<article className="border border-zinc-600 rounded-lg p-12 hover:bg-zinc-800">
-						<div className="flex items-center justify-between">
+						<div className="flex flex-col md:flex-row items-start justify-between">
 							<figure className="flex items-center space-x-6 mb-4">
 								<Link href="https://www.freelanceit.com.bd/" target="_blank">
 									<Image src="/images/freelanceitlab.png" width={32} height={32} alt="Freelance IT Lab" />
@@ -249,11 +272,113 @@ export default function Home() {
 								</figcaption>
 							</figure>
 							
-							<p className="text-zinc-300">August 2013 - January 2015</p>
+							<p className="text-zinc-300 mb-6 md:mb-0">August 2013 - January 2015</p>
 						</div>
 
 						<p className="text-zinc-300">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google&lsquo;s core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
 					</article>
+				</div>
+			</section>
+
+			{/* About me */}
+			<section className="py-24 hidden">
+				<div className="container grid grid-cols-2">
+					<figure>
+						<Image src='/images/about-me.svg' width={480} height={480} alt="About me" />
+						<figcaption></figcaption>
+					</figure>
+
+					<article>
+						<h2 className="text-5xl mb-16">
+							<span>About</span> {' '}
+							<span className="font-black">Me</span>
+						</h2>
+
+						<p className="mb-6">I&lsquo;m a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
+
+						<p className="mb-6">I began my journey as a web developer in 2015, and since then, I&lsquo;ve continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I&lsquo;m building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
+
+						<p>When I&lsquo;m not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
+					</article>
+				</div>
+			</section>
+
+			{/* My Experience */}
+			<section className="bg-black text-white py-24">
+				<div className="container text-center mb-20">
+					<h2 className="text-5xl">
+						<span>My</span> {' '}
+						<span className="font-black">Projects</span>
+					</h2>
+				</div>
+
+				<div className="container space-y-16 mb-16">
+					{/* SMS Amharctech */}
+					<article className="grid grid-cols-2 items-center">
+						<figure>
+							<Image 
+								src="/images/projects/sms-amharctech.png" 
+								alt="Service Management System"
+								className="rounded-xl"
+								width={512} 
+								height={512} />
+						</figure>
+						
+						<div className="space-y-4">
+							<h2 className="text-5xl font-extrabold">01</h2>
+							<h3 className="text-3xl font-bold">Service Management System (SMS)</h3>
+							<p className="text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officiis harum in doloremque doloribus corporis, esse similique molestiae necessitatibus, temporibus quaerat sit neque, laborum accusamus veritatis culpa quasi laudantium placeat.</p>
+							<Link href="https://sms.amharctech.com/" target="_blank" className="inline-block hover:text-orange-600">
+								<FaLink size={24} />
+							</Link>
+						</div>
+					</article>
+
+					{/* ePOS Amharctech */}
+					<article className="grid grid-cols-2 items-center">
+						<div className="space-y-4">
+							<h2 className="text-5xl font-extrabold">02</h2>
+							<h3 className="text-3xl font-bold">E-Point of Sale (EPOS)</h3>
+							<p className="text-zinc-500">AT EPOS stands out as a highly customizable EPOS solution. It offers a comprehensive set of features and aspects that can be tailored to fit an individual business’s requirements. This adaptability empowers businesses to optimize their operations, enhance customer experiences, and make data-driven decisions.</p>
+							<Link href="https://sms.amharctech.com/" target="_blank" className="inline-block hover:text-orange-600">
+								<FaLink size={24} />
+							</Link>
+						</div>
+
+						<figure>
+							<Image src="/images/projects/epos-amharctech.png" width={512} height={512} alt="ePOS" className="rounded-xl" />
+						</figure>
+					</article>
+
+					{/* LMS MaxSOP */}
+					<article className="grid grid-cols-2 items-center">
+						<figure>
+							<Image 
+								src="/images/projects/pacemaker-maxsop.png" 
+								alt="Learning Management System"
+								className="rounded-xl"
+								width={512} 
+								height={512} />
+						</figure>
+						
+						<div className="space-y-4">
+							<h2 className="text-5xl font-extrabold">03</h2>
+							<h3 className="text-3xl font-bold">Learning Management System (LMS)</h3>
+							<p className="text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officiis harum in doloremque doloribus corporis, esse similique molestiae necessitatibus, temporibus quaerat sit neque, laborum accusamus veritatis culpa quasi laudantium placeat.</p>
+							<Link href="https://www.pacemakerbd.com/" target="_blank" className="inline-block hover:text-orange-600">
+								<FaLink size={24} />
+							</Link>
+						</div>
+					</article>
+				</div>
+
+				<div className="container text-center">
+					<Link 
+						href="/"
+						className="inline-block border-2 rounded-md px-6 py-2 uppercase hover:bg-white hover:text-black"
+					>
+						See more projects
+					</Link>
 				</div>
 			</section>
 		</main>
