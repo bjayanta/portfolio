@@ -140,10 +140,10 @@ const ContactForm = () => {
                     <p className="text-zinc-500">I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
                     
                     <div className="flex flex-col space-y-2 text-2xl font-bold">
-                        <Link href="mailto:bjayanta.me@gmail.com" className="hover:text-orange-600">bjayanta.me@gmail.com</Link>
+                        <Link href="mailto:hello@jayanta.me" className="hover:text-orange-600">hello@jayanta.me</Link>
                         <p>
-                            <Link href="tel:+8801775219457" className="hover:text-orange-600">+880 1775 219457</Link>, {' '}
-                            <Link href="tel:+8801775219457" className="hover:text-orange-600">+880 1903 402828</Link>
+                            <Link href="tel:+880177521xxxx" className="hover:text-orange-600">+880 1775 21xxxx</Link>, {' '}
+                            <Link href="tel:+880190340xxxx" className="hover:text-orange-600">+880 1903 40xxxx</Link>
                         </p>
                     </div>
                 </article>
