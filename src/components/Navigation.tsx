@@ -28,10 +28,10 @@ const Navigation = () => {
 
                 {/* Menu */}
                 <ul className='hidden md:flex md:space-x-6 md:font-semibold'>
-                    <li><Link href='/about-me' className='hover:text-blue-600'>About Me</Link></li>
-                    <li><Link href='/skills' className='hover:text-blue-600'>Skills</Link></li>
-                    <li><Link href='/projects' className='hover:text-blue-600'>Projects</Link></li>
-                    <li><Link href='/contact-me' className='hover:text-blue-600'>Contact Me</Link></li>
+                    <li><Link href='/about-me' className='hover:text-orange-600'>About Me</Link></li>
+                    <li><Link href='/skills' className='hover:text-orange-600'>Skills</Link></li>
+                    <li><Link href='/projects' className='hover:text-orange-600'>Projects</Link></li>
+                    <li><Link href='/contact-me' className='hover:text-orange-600'>Contact Me</Link></li>
                 </ul>
 
                 {/* Download */}
@@ -55,11 +55,11 @@ const Navigation = () => {
             {/* Responsive menu */}
             <div className={cn('container mt-6 md:hidden', isOpen ? 'block' : 'hidden')}>
                 <ul className='space-y-2'>
-                    <li><Link href='/about-me' className='inline-flex w-full hover:text-blue-600'>About Me</Link></li>
-                    <li><Link href='/skills' className='inline-flex w-full hover:text-blue-600'>Skills</Link></li>
-                    <li><Link href='/projects' className='inline-flex w-full hover:text-blue-600'>Projects</Link></li>
-                    <li><Link href='/contact-me' className='inline-flex w-full hover:text-blue-600'>Contact Me</Link></li>
-                    <li><Link href="/doc/resume.pdf" className='inline-flex w-full hover:text-blue-600' target='_blank' download>Resume</Link></li>
+                    <li><Link href='/about-me' className='inline-flex w-full hover:text-orange-600'>About Me</Link></li>
+                    <li><Link href='/skills' className='inline-flex w-full hover:text-orange-600'>Skills</Link></li>
+                    <li><Link href='/projects' className='inline-flex w-full hover:text-orange-600'>Projects</Link></li>
+                    <li><Link href='/contact-me' className='inline-flex w-full hover:text-orange-600'>Contact Me</Link></li>
+                    <li><Link href="/doc/resume.pdf" className='inline-flex w-full hover:text-orange-600' target='_blank' download>Resume</Link></li>
                 </ul>
             </div>
         </nav>

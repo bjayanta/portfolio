@@ -36,8 +36,8 @@ export default function Home() {
 			<Navigation />
 
 			{/* Hero area */}
-			<header className="hidden">
-				<div className="container grid grid-cols-2 items-center py-20">
+			<header className="py-24">
+				<div className="container grid grid-cols-2 items-center">
 					<div>
 						<article className="space-y-6 mb-10">
 							<h2 className="text-5xl">
@@ -85,7 +85,7 @@ export default function Home() {
 
 			<main>
 				{/* My Skills */}
-				<section className="hidden">
+				<section>
 					<div className="container text-center py-16">
 						<h2 className="text-5xl">
 							<span>My</span> {' '}
@@ -177,7 +177,7 @@ export default function Home() {
 				</section>
 
 				{/* My Experience */}
-				<section className="bg-black text-white hidden">
+				<section className="bg-black text-white">
 					<div className="container text-center py-16">
 						<h2 className="text-5xl">
 							<span>My</span> {' '}
@@ -284,7 +284,7 @@ export default function Home() {
 				</section>
 
 				{/* About me */}
-				<section className="py-24 hidden">
+				<section className="py-24">
 					<div className="container grid grid-cols-2">
 						<figure>
 							<Image src='/images/about-me.svg' width={480} height={480} alt="About me" />
@@ -307,7 +307,7 @@ export default function Home() {
 				</section>
 
 				{/* My Projects */}
-				<section className="bg-black text-white py-24 hidden">
+				<section className="py-24 bg-black text-white">
 					<div className="container text-center mb-20">
 						<h2 className="text-5xl">
 							<span>My</span> {' '}
@@ -386,7 +386,7 @@ export default function Home() {
 				</section>
 
 				{/* My Testimonial */}
-				<section className="py-24 hidden">
+				<section className="py-24">
 					<div className="container text-center mb-20">
 						<h2 className="text-5xl">
 							<span>My</span> {' '}

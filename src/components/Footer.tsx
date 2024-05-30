@@ -13,8 +13,8 @@ const Footer = () => {
                 </div>
 
                 <div className="text-end">
-                    &copy; 2020 - { (new Date()).getFullYear() } by <Link href="https://jayanta.me" className="underline hover:no-underline">Jayanta</Link>. All Rights Reserved. <br /> 
-                    Powered by <Link href="https://oporishim.com/" target="_blank" className="underline hover:no-underline">Oporishim</Link>
+                    &copy; 2020 - { (new Date()).getFullYear() } by <Link href="https://jayanta.me/" className="underline hover:no-underline hover:text-orange-600">Jayanta</Link>. All Rights Reserved. <br /> 
+                    Powered by <Link href="https://oporishim.com/" target="_blank" className="underline hover:no-underline hover:text-orange-600">Oporishim</Link>
                 </div>
             </div>
         </footer>
