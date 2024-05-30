@@ -303,8 +303,8 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* My Experience */}
-			<section className="bg-black text-white py-24">
+			{/* My Projects */}
+			<section className="bg-black text-white py-24 hidden">
 				<div className="container text-center mb-20">
 					<h2 className="text-5xl">
 						<span>My</span> {' '}
@@ -378,6 +378,66 @@ export default function Home() {
 						className="inline-block border-2 rounded-md px-6 py-2 uppercase hover:bg-white hover:text-black"
 					>
 						See more projects
+					</Link>
+				</div>
+			</section>
+
+			{/* My Testimonial */}
+			<section className="py-24">
+				<div className="container text-center mb-20">
+					<h2 className="text-5xl">
+						<span>My</span> {' '}
+						<span className="font-black">Testimonial</span>
+					</h2>
+				</div>
+
+				<div className="container grid grid-cols-3 gap-6 mb-16">
+					<figure className="group p-12 shadow-lg rounded-lg hover:bg-black hover:text-white">
+						<div className="w-24 h-24 mx-auto border border-black rounded-full overflow-hidden mb-8 bg-white">
+							<Image src="/images/clients/client.png" alt="Vasile (Lica) G." width={96} height={96} />
+						</div>
+
+						<figcaption className="space-y-6 text-center text-neutral-800 group-hover:text-white">
+							<p>Jayanta has been an absolute joy to work with. His expertise, professionalism and communication skills are the best I&lsquo;ve ever worked with.</p>
+							<div className="w-1/2 h-1 mx-auto border-b-2 border-black group-hover:border-white"></div>
+							<h2 className="text-lg font-semibold">Vasile (Lica) G. <br/> Senior Technical Support Manager (USA)</h2>
+							<p>Upwork</p>
+						</figcaption>
+					</figure>
+
+					<figure className="group p-12 shadow-lg rounded-lg hover:bg-black hover:text-white">
+						<div className="w-24 h-24 mx-auto border border-black rounded-full overflow-hidden mb-8 bg-white">
+							<Image src="/images/clients/client.png" alt="Vasile (Lica) G." width={96} height={96} />
+						</div>
+
+						<figcaption className="space-y-6 text-center text-neutral-800 group-hover:text-white">
+							<p>Pleasant and open communication, always on hand for feedback, very eager to deliver exactly what i wanted, i was pleasantly surprised by just how my expectations were met and exceeded as well.</p>
+							<div className="w-1/2 h-1 mx-auto border-b-2 border-black group-hover:border-white"></div>
+							<h2 className="text-lg font-semibold">Charith Heenpalla <br/> Sri Lanka, Colombo</h2>
+							<p>Upwork</p>
+						</figcaption>
+					</figure>
+
+					<figure className="group p-12 shadow-lg rounded-lg hover:bg-black hover:text-white">
+						<div className="w-24 h-24 mx-auto border border-black rounded-full overflow-hidden mb-8 bg-white">
+							<Image src="/images/clients/client.png" alt="Vasile (Lica) G." width={96} height={96} />
+						</div>
+
+						<figcaption className="space-y-6 text-center text-neutral-800 group-hover:text-white">
+							<p>We are impressed by how quickly Jayanta understood our business and provided the software solution. After-sales support is great and we are happy.</p>
+							<div className="w-1/2 h-1 mx-auto border-b-2 border-black group-hover:border-white"></div>
+							<h2 className="text-lg font-semibold">Dr. Anik Ghosh <br/> Founder & CEO - PacemakerBD</h2>
+							<p>Local</p>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div className="container text-center">
+					<Link 
+						href="/"
+						className="inline-block border-2 border-black rounded-md px-6 py-2 uppercase hover:bg-black hover:text-white"
+					>
+						See more testimonials
 					</Link>
 				</div>
 			</section>
