@@ -320,7 +320,7 @@ export default function Home() {
 						<article className="grid grid-cols-2 items-center">
 							<figure>
 								<Image 
-									src="/images/projects/sms-amharctech.png" 
+									src="/images/projects/sms-amharctech.webp" 
 									alt="Service Management System"
 									className="rounded-xl"
 									width={512} 
@@ -349,7 +349,7 @@ export default function Home() {
 							</div>
 
 							<figure>
-								<Image src="/images/projects/epos-amharctech.png" width={512} height={512} alt="ePOS" className="rounded-xl" />
+								<Image src="/images/projects/epos-amharctech.webp" width={512} height={512} alt="ePOS" className="rounded-xl" />
 							</figure>
 						</article>
 
@@ -357,7 +357,7 @@ export default function Home() {
 						<article className="grid grid-cols-2 items-center">
 							<figure>
 								<Image 
-									src="/images/projects/pacemaker-maxsop.png" 
+									src="/images/projects/pacemaker-maxsop.webp" 
 									alt="Learning Management System"
 									className="rounded-xl"
 									width={512} 
