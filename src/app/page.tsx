@@ -55,7 +55,7 @@ export default function Home() {
 								<span className="font-black">Bangladesh.</span>
 							</h2>
 
-							<p className="text-gray-500">I&apos;m Jayanta Biswas Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+							<p className="text-gray-500">I&apos;m Jayanta Biswas Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book. abc</p>
 						</article>
 
 						<nav className="flex space-x-4">
